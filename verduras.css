@@ -1,0 +1,324 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#c1f0f6,#b4f8c8);
+    color:#333;
+}
+
+/* HEADER */
+
+header{
+    background:linear-gradient(135deg,#76b852,#8DC26F);
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+header p{
+    margin-bottom:20px;
+    font-size:1.1rem;
+}
+
+#pesquisa{
+    width:350px;
+    max-width:90%;
+    padding:15px;
+    border:none;
+    border-radius:30px;
+    outline:none;
+    font-size:16px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+/* BOTÃO DE NAVEGAÇÃO */
+
+.btn-navegacao{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 20px;
+    background:linear-gradient(135deg,#ff758c,#ff7eb3);
+    color:white;
+    font-weight:bold;
+    border-radius:10px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.btn-navegacao:hover{
+    transform:scale(1.05);
+}
+
+/* CARDS */
+
+#container-verduras{
+    max-width:1400px;
+    margin:auto;
+    padding:40px;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:25px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+    transition:.3s;
+
+    animation:aparecer .8s ease;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h2{
+    text-align:center;
+    color:#4CAF50;
+    margin-bottom:15px;
+}
+
+.card p{
+    margin:10px 0;
+    line-height:1.6;
+}
+
+.icone-verdura{
+    font-size:90px;
+    text-align:center;
+    margin-bottom:15px;
+
+    animation:pulsar 2s infinite ease-in-out;
+}
+
+/* BOTÃO */
+
+.btn-saiba{
+    width:100%;
+    padding:12px;
+    margin-top:15px;
+
+    border:none;
+    border-radius:10px;
+
+    background:linear-gradient(
+    135deg,
+    #76b852,
+    #8DC26F
+    );
+
+    color:white;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.btn-saiba:hover{
+    transform:scale(1.03);
+}
+
+/* MODAL */
+
+.modal{
+    display:none;
+
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,.7);
+
+    justify-content:center;
+    align-items:center;
+
+    z-index:1000;
+}
+
+.modal-content{
+    background:white;
+
+    width:90%;
+    max-width:600px;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    position:relative;
+
+    animation:zoom .3s ease;
+}
+
+.close{
+    position:absolute;
+    top:10px;
+    right:20px;
+
+    font-size:35px;
+
+    cursor:pointer;
+}
+
+.modal-icone{
+    text-align:center;
+    font-size:120px;
+    animation:pulsar 2s infinite ease-in-out;
+}
+
+.modal-content h2{
+    text-align:center;
+    color:#4CAF50;
+    margin-bottom:15px;
+}
+
+.modal-content p{
+    margin:10px 0;
+    line-height:1.6;
+}
+
+.curiosidade-box{
+    margin-top:20px;
+    background:#e0f7da;
+    padding:15px;
+    border-left:6px solid #4CAF50;
+    border-radius:10px;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:25px;
+    font-weight:bold;
+}
+
+/* ANIMAÇÕES */
+
+@keyframes aparecer{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes zoom{
+    from{
+        transform:scale(.8);
+    }
+    to{
+        transform:scale(1);
+    }
+}
+
+@keyframes pulsar{
+    0%, 100%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.1);
+    }
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+    header h1{
+        font-size:2.2rem;
+    }
+
+    #container-verduras{
+        padding:20px;
+    }
+}
+/* BANNER HEADER */
+.banner-verduras {
+    background: 
+        linear-gradient(
+            rgba(34, 139, 34, 0.6),
+            rgba(76, 175, 80, 0.6)
+        ),
+        url("https://agristar.com.br/upload/blog/original/os-10-legumes-e-verduras-mais-saudaveis-do-mundo-06-05-2024-11-48-27-7499.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,.15);
+    border-radius: 20px;
+}
+
+.banner-content h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.banner-content #pesquisa {
+    width: 350px;
+    max-width: 90%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    font-size: 16px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.15);
+    margin-bottom: 20px;
+}
+
+.banner-content .navegacao {
+    margin-top: 10px;
+}
+
+.banner-content .btn-navegacao {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #ee64b0, #ee64b0);
+    color: white;
+    font-weight: 600;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(238, 107, 179, 0.3);
+    transition: all 0.3s ease;
+}
+
+.banner-content .btn-navegacao:hover {
+    background: linear-gradient(135deg, #f374ba, #ee64b0);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(46,125,50,0.4);
+}

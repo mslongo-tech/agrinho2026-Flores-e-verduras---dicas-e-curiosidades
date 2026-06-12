@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>🥬 Guia das Verduras - Agrinho</title>
+
+<link rel="stylesheet" href="verduras.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<header>
+
+    <div class="header-content">
+        <div class="banner-verduras">
+        <div class="banner-content">
+        
+        <h1>🥬 Guia das Verduras 🥕</h1>
+
+        <p>
+            Conheça verduras, aprenda a cuidar delas
+            e descubra curiosidades incríveis.
+        </p>
+
+        <input
+        type="text"
+        id="pesquisa"
+        placeholder="🔍 Pesquisar verdura...">
+
+        <div class="navegacao">
+            <a href="index.html" class="btn-navegacao">🌸 Flores</a>
+        </div>
+
+    </div>
+
+</header>
+
+<main>
+
+    <section id="container-verduras"></section>
+
+</main>
+
+<footer>
+
+    <p>
+        🌱 Projeto Agrinho - Guia das Verduras 🥕
+    </p>
+
+</footer>
+
+<!-- MODAL -->
+
+<div id="modal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="fecharModal()">&times;</span>
+
+        <div id="modal-icone" class="modal-icone"></div>
+
+        <h2 id="modal-nome"></h2>
+
+        <p id="modal-cuidados"></p>
+
+        <p id="modal-caracteristicas"></p>
+
+        <div class="curiosidade-box">
+
+            <h3>🌟 Curiosidade</h3>
+
+            <p id="modal-curiosidade"></p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="verduras.js"></script>
+
+</body>
+</html>
