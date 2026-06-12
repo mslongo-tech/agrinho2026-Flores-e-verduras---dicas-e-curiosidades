@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>🌸 Guia das Flores - Agrinho</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="header-content">
+
+        <h1>🌸 Guia das Flores 🌸</h1>
+
+        <p>
+            Conheça flores, aprenda a cuidar delas
+            e descubra curiosidades incríveis.
+        </p>
+
+        <input
+        type="text"
+        id="pesquisa"
+        placeholder="🔍 Pesquisar flor...">
+
+    </div>
+    <div class="navegacao">
+            <a href="verduras.html" class="btn-navegacao">🥬Verduras</a>
+        </div>
+
+</header>
+
+<section class="banner">
+
+    <div class="banner-texto">
+
+        <h2>Bem-vindo ao Jardim Virtual</h2>
+
+        <p>
+            As flores ajudam a natureza,
+            atraem polinizadores e deixam o mundo mais bonito.
+        </p>
+
+    </div>
+
+</section>
+
+<main>
+
+    <section id="container-flores"></section>
+
+</main>
+
+<footer>
+
+    <p>
+        🌱 Projeto Agrinho - Guia das Flores 🌸
+    </p>
+
+</footer>
+
+<!-- MODAL -->
+
+<div id="modal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="fecharModal()">
+            &times;
+        </span>
+
+        <div id="modal-icone" class="modal-icone"></div>
+
+        <h2 id="modal-nome"></h2>
+
+        <p id="modal-agua"></p>
+
+        <p id="modal-sol"></p>
+
+        <p id="modal-caracteristicas"></p>
+
+        <div class="curiosidade-box">
+
+            <h3>🌟 Curiosidade</h3>
+
+            <p id="modal-curiosidade"></p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
