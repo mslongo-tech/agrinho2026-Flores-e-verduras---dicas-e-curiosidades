@@ -1,1 +1,3 @@
 # agrinho2026-Flores-e-verduras---dicas-e-curiosidades
+Este projeto,foi criado para as pessoas aprenderem mais sobre plantas,como verduras e flores, descobrirem curiosidades, como cuidar e cultivar esses tipos especifícos de plantas, verem a importãncia das plantações para a vida.
+Quando o usuário abre o site, ele ve uma página sobre diversos tipos de flores, cada uma com dicas de plantio e curiosidades sobre as flores. No começo tem um botão verde escrito "verduras", onde leva o usuário para a página 2, com dicas de plantio e curiosidades sobre verduras. Na página 2 tem um botão rosa escrito "flores" onde leva o usuátio de volta para a página 1.
